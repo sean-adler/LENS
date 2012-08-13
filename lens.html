@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<style type="text/css">
+  html { height: 100% }
+  body { height: 100%; margin: 0px; padding: 0px }
+  #map_canvas { height: 100% }
+</style>
+<script src="http://maps.google.com/maps/api/js?&sensor=false"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="lens.js"></script>
+</head>
+<body onload="initialize(); panHelper();">
+  <div id="map_canvas" style="width:100%; height:100%"></div>
+  <center> 
+    <form>
+      <input type="hidden" value="" id="lat" />
+      <input type="hidden" value="" id="lon" />
+      <input type="hidden" value="" id="address" />
+      <input type="hidden" value="" id="desc" />
+    </form>
+  </center>
+</body>
+</html>
